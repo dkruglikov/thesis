@@ -8,6 +8,8 @@ repositories {
     jcenter()
 }
 
+mainClassName = 'ua.dp.dkruglikov.expert.system.Main'
+
 dependencies {
     implementation 'org.apache.httpcomponents:httpclient:4.5.12'
     testImplementation 'junit:junit:4.13'
@@ -19,11 +21,11 @@ java {
 
 application {
     mainModule = 'ua.dp.dkruglikov.expert.system'
-    mainClass = 'ua.dp.dkruglikov.expert.system.Main'
+    mainClass = "$mainClassName"
 }
 
 tasks.jar {
     manifest {
-        attributes 'Main-Class' : 'com.agistix.intellicus.updater.Main'
+        attributes 'Main-Class' : "$mainClassName"
     }
 }
