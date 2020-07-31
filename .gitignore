@@ -1,3 +1,7 @@
 /expert-system/.gradle/
 /expert-system/build/
+
+/R/.Rproj.user
+/R/plots/
+
 /meeting/

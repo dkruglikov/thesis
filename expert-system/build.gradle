@@ -12,6 +12,7 @@ mainClassName = 'ua.dp.dkruglikov.expert.system.Main'
 
 dependencies {
     implementation 'org.apache.httpcomponents:httpclient:4.5.12'
+    implementation 'org.eclipse:yasson:1.0.5'
     testImplementation 'junit:junit:4.13'
 }
 
